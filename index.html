@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------imp meta tags-------------- -->
+    <meta name="author" content="team3">
+    <meta name="keyword" content="team3, bonsaia, bonsaiplants, bonsai, ecommerce, bonsaia.com, islingtonbonsai">
+    <meta name="descirption" content="ecommerce website on bonsai plants">
+    <!-- ---------end of meta tags----------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ------------linking css file --------------------- -->
+
+    <!-- ----------linking js file---------------- -->
+    <script src="./js/main.js"></script>
+    <!-- ----------linking js file---------------- -->
+
+    <!-- ---------title of the website----------- -->
+    <title>BonsaiA</title>
+    <!-- ------end of the title of the website------ -->
+
+</head>
+
+<body>
+    <!-- --header section starts-- -->
+    <header class="header">
+        <div class="upper_header">
+            <a href="./index.html" class="logo"><img src="./images/Logo.png" width="180px"></a>
+
+            <div class="wrap">
+                <div class="search">
+                    <!-- onclick=avaiable is linking to javascript -->
+                    <input type="text" class="searchterm" placeholder="What are you looking for...?">
+                    <button type="submit" class="searchbutton" onclick="available()"><a href="#shopsec"></a>
+                        <img src="./images/search.png" width="15px" height="15px"><a href="#shopsec"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="icons">
+                <!-- onclick=cart is linking to javascript -->
+                <button onclick="cart()" style="cursor: pointer;"><img src="./images/chart.png" width="30px"
+                        height="30px"></button>
+                <!-- &nbsp; is the entity in html to give a space -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./html/login.html" class="user"><img src="./images/user.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+        <!-- ------header link section-- -->
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./html/shop.html">Shop</a>
+                <a href="./html/blog.html">Blog</a>
+                <a href="./html/faq.html">FAQs</a>
+                <a href="./html/research.html">Research</a>
+                <a href="./html/about.html">About Us</a>
+                <a href="./html/contactus.html">Contact Us!</a>
+            </nav>
+        </div>
+        <!-- ------end of header link section-- -->
+
+    </header>
+    <!-- --header section ends-- -->
+
+    <!-- --home page start-- -->
+    <section id="home">
+        <div class="content">
+            <h3>What does a Bonsai represent?</h3>
+            <Br>
+            <p class="homepage">Recieving a Bonsai as a gift is said to double their fortune.
+                <br> This living piece of art helps to invite care, patience and positivity into your life. They represent peace and harmony with nature.
+            </p>
+            <br>
+            <a href="./html/shop.html" class="btnhome">Shop now</a>
+        </div>
+    </section>
+    <!-- --home page ends-- -->
+
+
+    <!-- VIDEO-------- -->
+    <section id="video">
+        <h2 style="text-align: center; margin-bottom: 40px; text-decoration: solid;">Project <span style="color: green;">HARIYO</span></h2>
+        <div class="video1">
+            <div class="a1">
+                <!-- --autoplay, mute make the video auto matically play mutly when website load  -->
+                <video autoplay loop muted width="700px" height="420px">
+                    <source src="./hariyo.mp4" type="video/mp4">
+                    <!-- ----video source is taken from Bonsai Relief-- -->
+                </video>
+                <a href="https://www.youtube.com/watch?v=fCdXvp0tTnc">
+                    <p style="text-align: center;"> Credit: Bonsnai Relief</p>
+                </a>
+            </div>
+            <div class="a2">
+                <h1>Decorate with us</h1>
+                <br>
+                <p style="text-align: justify; line-height: 26px;">The idea is to trim the plant's roots and leaves such that it stays dwarfed or is pruned to be that way. In particular, species of perennial trees or shrubs with woody stems that generate true branches and can be trained to remain tiny
+                    by container confinement with crown and root trimming are used to make bonsai.
+                    <br>
+                    <br> Growing plants in a pot is the art and science of bonsai. A giant tree is reduced in size to a little or miniature tree to create an artistic effect. To stay alive, bonsai requires a frequently changing media in a small container.
+                    To create a unique plant, numerous species from diverse genus were traditionally crossed. It's a smaller version of a real tree, to put it simply.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--END OF VIDEO-------- -->
+
+
+    <!-- ----category---- -->
+    <section class="Category" id="category" style="margin-top: -40px;">
+        <h1 class="headingofcategory">Bonsai <span>Category</span></h1>
+        <div class="products">
+            <div class="card">
+                <div class="img"><img src="./images/beginner/Satsuki.jpg" alt="bonsaia"></div>
+                <div class="title">For Beginners</div>
+                <div class="desc">A collection of Bonsai suitable for Beginner level enthusiasts for Bonsai Art.</div>
+                <div class="box">
+                    <a href="./html/beginner.html" class="btn">Learn more</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./images/indoor/dwarf.jpg" alt="bonsaia"></div>
+                <div class="title">Indoor Bonsai</div>
+                <div class="desc">A collection of Bonsai that can be grown in the comfort of your own home.</div>
+                <div class="box">
+                    <a href="./html/indoor.html"><button class="btn">Learn more</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./images/outdoor/maple.jpg" alt="bonsaia"></div>
+                <div class="title">Outdoor Bonsai</div>
+                <div class="desc">A collection of Bonsai that can be grown in the comfort of your own garden.</div>
+                <div class="box">
+                    <a href="./html/outdoor.html"><button class="btn">Learn more</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="./images/herbal/Lavender.jpg" alt="bonsaia"></div>
+                <div class="title">Herbal Bonsai</div>
+                <div class="desc">A collection of Bonsai that can be grown for herbal purposes in your kitchen garden.
+                </div>
+                <div class="box">
+                    <a href="./html/herbal.html"><button class="btn">Learn more</button></a>
+                </div>
+            </div>
+            <!-- ---card of the products--- -->
+
+        </div>
+    </section>
+    <!-- -----end of the category------ -->
+
+    <!-- --below home page-- -->
+    <section class="bhome" style="margin-top: -100px;">
+        <h1 class="pheading" style="text-decoration: underline;">Our Popular Products</h1><br>
+        <section class="sec">
+            <div class="products">
+                <!-- ---card of the products--- -->
+                <div class="card">
+                    <div class="img"><img src="./images/beginner/Juniper.jpg" alt="bonsaia"></div>
+                    <div class="title">Juniper</div>
+                    <div class="desc"> They are evergreen coniferous trees or shrubs.</div>
+                    <div class="box">
+                        <div class="price" style="text-decoration: line-through;">Rs. 2999</div>
+                        <div class="price">Rs. 1999</div>
+                        <a href="./products/Juniper.html"><button class="btn">Buy Now</button></a>
+                    </div>
+                </div>
+                <!-- ---end of the card products--- -->
+
+
+                <!-- ---card of the products--- -->
+                <div class="card">
+                    <div class="img"><img src="./images/outdoor/winterberry.jpg" alt="bonsaia"></div>
+                    <div class="title">Japanese Winterberry</div>
+                    <div class="desc">Fall and winter are endorsed as the best seasons for this bonsai</div>
+                    <div class="box">
+                        <div class="price">Rs. 2500</div>
+                        <a href="./products/Japanesewinterberry.html"><button class="btn">Buy Now</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="./images/indoor/Fukien.jpg" alt="bonsaia"></div>
+                    <div class="title">Fukien Tea</div>
+                    <div class="desc">The Fukien Tea is a subtropical evergreen shrub</div>
+                    <div class="box">
+                        <div class="price" style="text-decoration: line-through;">Rs. 3999</div>
+                        <div class="price">Rs. 2999</div>
+                        <a href="./products/FukienTea.html"><button class="btn">Buy Now</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="./images/herbal/Sweet.jpeg" alt="bonsaia"></div>
+                    <div class="title">Sweet Bay Laurel</div>
+                    <div class="desc">This Bonsai is great option for indoor bonsai.</div>
+                    <div class="box">
+                        <div class="price" style="text-decoration: line-through;">Rs. 5999</div>
+                        <div class="price">Rs. 5000</div>
+                        <a href="./products/Sweetbaylaurel.html"><button class="btn">Buy Now</button></a>
+                    </div>
+                </div>
+                <!-- ---end of the card products--- -->
+
+            </div>
+        </section>
+    </section>
+    <!-- --end of below home page-- -->
+
+    <!-- ----details of the all home pages------ -->
+    <!-- --blog-- -->
+    <div class="detail">
+        <div class="detailsec">
+            <div class="container0">
+                <div class="img-container0">
+                    <img src="./images/blog/technature.jpeg">
+                </div>
+                <div class="text-container0">
+                    <br>
+                    <h2>Blog</h2>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The relationship between technology and nature has always been complex, with considerable overlap between the two. While nature continues to be an inspiration for new technologies and ways of thinking,
+                        advancements in technology have made it possible for us to better comprehend and influence the natural world. Our impact on the environment has increased along with our technological advancements. To achieve a balance between the
+                        two, it is crucial to understand both the advantages and disadvantages of technology.
+                    </p>
+                    <br>
+                    <a href="./html/blog.html"><button class="btn001" style="cursor: pointer;">Blog More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of --blog-- -->
+    <!-- --br- tag is used for giving a line break in webpage -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- ----FAQa-0---- -->
+    <div class="detail">
+        <div class="detailsec">
+            <div class="container0">
+                <div class="img-container0">
+                    <img src="./images/outdoor/maple.jpg" style="height: 450px;" width="300px">
+                </div>
+                <div class="text-container0">
+                    <br>
+                    <h2>FAQs</h2>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There might a lots of question people might have related with Bonsai or with us. We have considered few most asked question with about us and Bonsai. Few are: </p>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">What is the best bonsai for a beginner?</p>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">How often should I water my bonsai?
+                    </p>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">What should I do if my order hasn't been delivered yet?
+                    </p>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">What should I do if my order hasn't been delivered yet?
+                        <br>
+                        <br>
+                        <a href="./html/faq.html"><button class="btn001" style="cursor: pointer;">FAQs More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --end of FAQs-- -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- --Research-- -->
+    <div class="detail">
+        <div class="detailsec">
+            <div class="container0">
+                <div class="img-container0">
+                    <img src="./images/homeresearch.jpg" style="margin-top: 30px;">
+                </div>
+                <div class="text-container0">
+                    <br>
+                    <h2>Research</h2>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The purpose of an e-commerce website is to sell products or services online. It provides a platform for business to reach a wider audience and offer a convenient shopping experience for customer.
+                        The given website compared to ours is equally presented in terms of visualization with the aim to display the magnificent difference betwween the referenced website and our website.
+                    </p>
+                    <br>
+                    <a href="./html/research.html"><button class="btn001" style="cursor: pointer;">Research More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of --blog-- -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- --About Us-- -->
+    <div class="detail">
+        <div class="detailsec">
+            <div class="container0">
+                <div class="img-container0">
+                    <img src="./images/great team.jpg" style="margin-top: 30px;">
+                </div>
+                <div class="text-container0">
+                    <br>
+                    <h2>About Us</h2>
+                    <br>
+                    <p style="font-size: 20px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our team is a group of five very innovative people who have come together to make this Bonsai e-commerce business a reality. All of us come from very different backgrounds and fields of study, and
+                        met each other through different friend circles. The one thing that unites us all however, is our passion for decorative nature. It was through pure coincidence that we started talking about nature, which eventually led to us forming
+                        a plan for an e-business together. Each one of us have a particular and very important contribution to this project and are very proud of it.
+                    </p>
+                    <br>
+                    <a href="./html/about.html"><button class="btn001" style="cursor: pointer;">Know Us!</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of --blog-- -->
+
+    <br>
+    <br>
+    <!-- ---end of details of the all home pages------ -->
+
+    <!-- --------------------footer-------------------- -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="./images/Logo.png" alt="logo" width="180px" style="margin-top: -30px;">
+            <br>
+            <h3>Contact</h3>
+            <br>
+            <p><strong>Address: </strong> Kamalpokhari road-12, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>+977 9876567654, 9878987656</p>
+            <p><strong>Hours: </strong>10:00 am - 08:00 Pm, Sun-Sat</p>
+        </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <br>
+            <a href="./html/faq.html">FAQS</a>
+            <a href="./html/blog.html">Blog</a>
+            <a href="./html/shop.html">Shop</a>
+            <a href="./html/research.html">Research</a>
+            <a href="./html/about.html">About Us</a>
+            <a href="./html/contactus.html">Contact Us!</a>
+        </div>
+        <div class="col">
+            <h3>Account</h3>
+            <a href="./html/login.html">Sign in</a>
+            <a href="./html/signup.html">Sign Up</a>
+        </div>
+        <div class="col install">
+            <h3>Services</h3>
+            <p>All over Nepal Service</p>
+            <img src="./images/nepal.png" alt="nepal map" width="180px">
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center;">
+        <p>Copyright © 2023 | Bonsaia | Team 3 | All rights reserved </p>
+        <p> Terms and Condititons | Privacy Policy </p>
+    </div>
+    <!-- --------------end of the all footers----------------------------- -->
+
+</body>
+
+</html>

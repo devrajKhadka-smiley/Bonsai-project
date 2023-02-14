@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------imp meta tags-------------- -->
+    <meta name="author" content="team3">
+    <meta name="keyword" content="team3, bonsaia, bonsaiplants, bonsai">
+    <meta name="descirption" content="ecommerce website on bonsai plants">
+    <!-- ---------end of meta tags----------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ------------linking css file --------------------- -->
+
+    <!-- ---------title of the website----------- -->
+    <title>Frequently Asked Questions - Bonsaia</title>
+    <!-- ------end of the title of the website------ -->
+
+    <style>
+        /*body section*/
+
+        .faq {
+            font-size: 19px;
+            line-height: 26px;
+            padding: 100px 100px 100px 100px;
+            background-image: url(../images/Backgroundfaq.png);
+            background-repeat: repeat-y;
+            background-size: contain;
+            font-style: 'Arial', sans-serif;
+            text-align: justify;
+        }
+
+        .faq h1 {
+            color: #1e2134;
+            padding: 30px;
+            font-size: 60px;
+        }
+
+        .faqsec {
+            background-color: #e4e6c3de;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .faqnav .navbar {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .faqnav a {
+            color: rgb(142, 83, 15);
+            display: inline-block;
+            padding: 15px;
+            font-size: 35px;
+            border: 4px solid #8A2E39;
+            border-radius: 30px;
+            margin: 0 15px 0 15px;
+        }
+
+        .faqnav a:hover {
+            background-color: #8A2E39;
+            transition: 0.5s;
+            color: #D2D59A;
+        }
+
+        .faqbody,
+        ol {
+            padding: 30px;
+        }
+
+        .faqbody h3 {
+            font-size: 45px;
+            color: #8A2E39;
+            text-decoration: underline;
+        }
+
+        /*end of faq sections*/
+    </style>
+</head>
+
+<body>
+    <!-- --header section starts-- -->
+    <header class="header">
+        <div class="upper_header">
+            <a href="../index.html" class="logo"><img src="../images/Logo.png" width="180px"></a>
+
+
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchterm" placeholder="What are you looking for...?">
+                    <button type="submit" class="searchbutton" onclick="available()"><a href="#shopsec"></a>
+                        <img src="../images/search.png" width="15px" height="15px"><a href="#shopsec"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="icons">
+                <button onclick="cart()" style="cursor: pointer;"><img src="../images/chart.png" width="30px"
+                        height="30px"></button>
+                <!-- &nbsp; is the entity in html to give a space -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./login.html" class="user"><img src="../images/user.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQs</a>
+                <a href="./research.html">Research</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contactus.html">Contact Us!</a>
+            </nav>
+        </div>
+    </header>
+    <!-- --header section ends-- -->
+
+    <section class="faq">
+        <div class="faqsec">
+            <h1 style="text-align: center;">
+                FAQs
+            </h1>
+            <p style="padding: 0 20px 0 20px;">This is a list of answers to the most common questions that we get from
+                you. If you are not able to find the answer to the question you are looking for in the list below,
+                please don't hesitate to contact us.</p>
+            <br> &nbsp;&nbsp;
+            <div class="faqnav">
+                <nav class="navbar">
+                    <b>
+                        <a href="#General">General</a>
+                        <a href="#Account">Account</a>
+                        <a href="#Payment">Payment</a>
+                        <a href="#Delivery">Delivery</a>
+                    </b>
+                </nav>
+            </div>
+            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="faqbody">
+                <div id="General">
+                    <h3>General:</h3>
+                    <br>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <b style="font-size: 24px;">What is the best bonsai for a beginner?</b>
+                            <br> People new to the art of bonsai often ask us this question. The answer is - it depends!
+                            Success with bonsai depends on two important things: location and watering. Having said
+                            that, some species of tree are certainly more
+                            manageable than others.
+                            <br> Bonsai trees are suitable for any home, and they are also great for someone who is not
+                            used to caring for a garden. When you start with bonsai, you tend to want to keep them in
+                            the house. After all, they are houseplants.
+                            You won't see them as much as you would if they were on the coffee table/desk. Some bonsai
+                            plants can be kept indoors, and people tend to start with these.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">What is the meaning of bonsai?</b>
+                            <br> The word “Bon-sai” (often misspelled as Bonzai or Banzai) is a Japanese term that when
+                            translated, means “planted in a container”. This was derived from an ancient Chinese
+                            horticultural practice, which was then redeveloped
+                            under the influence of Japanese Zen Buddhism.
+                            <br> It has been around for well over a thousand years. The ultimate goal of growing a
+                            Bonsai is to create a miniaturized as well as realistic representation of nature in the form
+                            of a tree. Bonsai are not genetically dwarfed
+                            plants any tree species can be used to grow a bonsai.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">How often should I water my bonsai?</b>
+                            <br> Approximately once a week or so, when the topsoil feels completely dry, immerse the
+                            entire bonsai plant in a bucket or basin of water until all the air bubbles have risen to
+                            the top. Humidity is an important consideration
+                            for the health of the bonsai.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">Why is bonsai so expensive?</b>
+                            <br> Bonsai creation is an art form. Taking care of a bonsai is very labor intensive and
+                            often requires skilled workers. There is a low supply of good quality bonsai. It is usually
+                            a long-term investment as they can survive
+                            for many years.
+                        </li>
+                    </ul>
+                </div>
+                <br> &nbsp;
+                <div id="Account">
+                    <h3>Account:</h3>
+                    <br>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            <b style="font-size: 24px;">How do I change my password?</b>
+                            <br> If you already know the current password and want to change the password, then go to
+                            Settings > Accounts > Sign-In option. Under the password, select change, and follow the
+                            directions.
+                        </li>
+                        &nbsp;
+                        <li>
+                            How do I delete my account? Until now we haven't set any option to delete your data from our
+                            database. But we will surely bring this feature soon.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">I forgot my password. How do I reset it?</b><br> You can change
+                            your password for security reasons or reset it if you forget it. The process is as follows:
+                            <ol>
+                                <li>Go to the Sign-In page.</li>
+                                <li> Click Forgot Password.</li>
+                                <li> Enter your email and wait.</li>
+                                <li>till you receive your pin.</li>
+                                <li> Enter the pin from your email.</li>
+                                <li> Enter a new password and confirm it.</li>
+                                <li> Go to the login page and log in with your new password!</li>
+                                <li>Enjoy!</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                </div>
+                <br> &nbsp;
+                <div id="Payment">
+                    <h3>Payment:</h3>
+                    <br>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            <b style="font-size: 24px;">Can I pay after the delivery?</b>
+                            <br> Yes, We accept cash on delivery, pre-payment, debit card/credit card payment as well as
+                            online payment via PayPal, Khalti, or E-Sewa.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">What are your payment options?</b>
+                            <br> We accept PayPal payments, E-Sewa, Khalti, debit cards, credit cards, and cash on
+                            delivery.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">How can I update my credit card information?</b>
+                            <br> New credit card information can be submitted through the Account section. Under the
+                            Billing section, select Credit Card and input your new credit card information. Your new
+                            credit card information will be updated in our
+                            database.
+                        </li>
+                    </ul>
+                </div>
+                <br> &nbsp;
+                <div id="Delivery">
+                    <h3>Delivery:</h3>
+                    <br>
+                    <ul style="list-style-type: square;">
+                        <li>
+                            <b style="font-size: 24px;">What should I do if my order hasn't been delivered yet?</b>
+                            <br> The first step to take in case of an undelivered product is to contact us through the
+                            contact us section on our website. Any confusion or reason for delay will get cleared up by
+                            simply informing or notifying us of this
+                            error. If there is no reply from us, it could be due to the holiday season, so please be
+                            patient!
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">How can I find my delivery tracking Number?</b>
+                            <br> You can track your shipment using our website or one of our online portals. Usually, we
+                            send you a link to track your shipment through your email or messages. Please wait until the
+                            order has been confirmed to check for
+                            the delivery tracking number, as it will be included in the same file.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">How do I return or refund items?</b>
+                            <br> You may request returns for most items you buy from BONSAIA. However, you can only
+                            return items explicitly identified as "returnable" on the product detail with a valid
+                            reason. Any damaged items will NOT be refunded.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">When will my order arrive?</b>
+                            <br> The processing time for your order depends on several things: the type of order,
+                            whether your order is in stock, and when you place it. Usually, it takes about 1-2 business
+                            days for the order confirmation email. The details
+                            of the delivery, including the expected arrival, are included in the email or message.
+                        </li>
+                        &nbsp;
+                        <li>
+                            <b style="font-size: 24px;">Can I change my delivery address?</b>
+                            <br> You can change your delivery address if your order has not been shipped or delivered
+                            yet. We recommend informing us immediately if the address is incorrect or has been changed.
+                            If your order is already in transit, additional
+                            charges may or may not be added depending on the situation. Please contact us directly for
+                            more detailed help in this matter.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------footer-------------------- -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/Logo.png" alt="logo" width="180px" style="margin-top: -30px;">
+            <br>
+            <h3>Contact</h3>
+            <br>
+            <p><strong>Address: </strong> Kamalpokhari road-12, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>+977 9876567654, 9878987656</p>
+            <p><strong>Hours: </strong>10:00 am - 08:00 Pm, Sun-Sat</p>
+        </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <br>
+            <a href="./faq.html">FAQS</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./research.html">Research</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contactus.html">Contact Us!</a>
+        </div>
+        <div class="col">
+            <h3>Account</h3>
+            <a href="./login.html">Sign in</a>
+            <a href="./signup.html">Sign Up</a>
+        </div>
+        <div class="col install">
+            <h3>Services</h3>
+            <p>All over Nepal Service</p>
+            <img src="../images/nepal.png" alt="nepal map" width="180px">
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center;">
+        <p>Copyright © 2023 | Bonsaia | Team 3 | All rights reserved </p>
+        <p> Terms and Condititons | Privacy Policy </p>
+    </div>
+    <!-- --------------end of the all footers----------------------------- -->
+
+</body>
+
+<script type="text/javascript">
+    // This is for pop up function
+    function cart() {
+        alert("There are currently no items in your cart!");
+    }
+
+    function available() {
+        alert("This service will be available soon");
+    }
+</script>
+
+</html>

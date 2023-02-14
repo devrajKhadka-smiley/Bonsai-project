@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------imp meta tags-------------- -->
+    <meta name="author" content="team3">
+    <meta name="keyword" content="team3, bonsaia, bonsaiplants, bonsai, ecommerce, bonsaia.com, islingtonbonsai">
+    <meta name="descirption" content="ecommerce website on bonsai plants">
+    <!-- ---------end of meta tags----------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ------------linking css file --------------------- -->
+
+    <!-- ----------linking js file---------------- -->
+    <script src="../js/main.js"></script>
+    <!-- ----------linking js file---------------- -->
+
+    <!-- ---------title of the website----------- -->
+    <title>Thyme - Bonsaia</title>
+    <!-- ------end of the title of the website------ -->
+
+    <style>
+        /* --inline css-- */
+        /* --- Singple Product--- */
+
+        .singlep {
+            margin-top: -60px;
+            margin-bottom: -50px;
+            width: 100%;
+            height: 470px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 25px;
+            background-color: lightblue;
+        }
+
+        .p1 {
+            margin: 30px 30px;
+        }
+
+        .p2 {
+            margin-left: -50px;
+        }
+
+        .col-2 {
+            margin: 30px 30px;
+            padding: 30px;
+        }
+
+        /* ---end of single product--- */
+    </style>
+
+</head>
+
+<body>
+    <!-- --header section starts-- -->
+    <header class="header">
+        <div class="upper_header">
+            <a href="../index.html" class="logo"><img src="../images/Logo.png" width="180px"></a>
+
+
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchterm" placeholder="What are you looking for...?">
+                    <button type="submit" class="searchbutton" onclick="available()"><a href="#shopsec"></a>
+                        <img src="../images/search.png" width="15px" height="15px"><a href="#shopsec"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="icons">
+                <button onclick="cart()" style="cursor: pointer;"><img src="../images/chart.png" width="30px"
+                        height="30px"></button>
+                <!-- &nbsp; is the entity in html to give a space -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../html/login.html" class="user"><img src="../images/user.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="../html/shop.html">Shop</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/faq.html">FAQs</a>
+                <a href="../html/research.html">Research</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/contactus.html">Contact Us!</a>
+            </nav>
+        </div>
+    </header>
+    <!-- --header section ends-- -->
+
+    <!-- ---juniper Product--- -->
+    <!-- --------back button---- -->
+    <br>
+    <form>
+        <input type="button" value="Back" onclick="history.go(-1)"
+            style="padding: 20px; margin-left: 110px; border-radius: 20px; margin-bottom: -50px; cursor: pointer; font-size: 20px;">
+    </form>
+    <!-- --------back button---- -->
+    <section id="single product">
+        <div class="singlep">
+            <div class="p1">
+                <img src="../images/herbal/thyme.jpg" width="500px" height="400px">
+            </div>
+            <div class="p2">
+                <div class="col-2">
+                    <h1 style="color: green; text-decoration: underline;">Thyme</h1>
+                    <br>
+                    <h3>Product Details</h3>
+                    <p>Thymes are woody, aromatic, evergreen shrubs that are found majorly on dry grassland around
+                        Europe and Asia. They produce minute oval leaves and beautiful lavender, pink or white flowers.
+                    </p>
+                    <br>
+                    <p>
+                        For bonsai, they are commonly seen as an accessory or decorative plant. Commonly, they are found
+                        growing with a large number of very thin trunks arising from the root base. It is rarely
+                        possible to find thymes with a single trunk that is thick enough
+                        to use as an individual bonsai specimen. It is very important to note that they show an adverse
+                        reaction to acidic chemicals and fertilizers.</p>
+                    <br>
+                    <div style="font-size: 20px;" class="price">Rs. 2800</div>
+                    <br>
+                    <button onclick="ceart()" style="cursor: pointer;"><a href="#" class="btnhome">Add to
+                            cart</a></button>
+                    <button onclick="shop()" style="cursor: pointer;"><a href="#" class="btnhome">Shop now</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --end of juniper Product--- -->
+
+    <!-- --------------------footer-------------------- -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/Logo.png" alt="logo" width="180px" style="margin-top: -30px;">
+            <br>
+            <h3>Contact</h3>
+            <br>
+            <p><strong>Address: </strong> Kamalpokhari road-12, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>+977 9876567654, 9878987656</p>
+            <p><strong>Hours: </strong>10:00 am - 08:00 Pm, Sun-Sat</p>
+        </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <br>
+            <a href="../html/faq.html">FAQS</a>
+            <a href="../html/blog.html">Blog</a>
+            <a href="../html/shop.html">Shop</a>
+            <a href="../html/research.html">Research</a>
+            <a href="../html/about.html">About Us</a>
+            <a href="../html/contactus.html">Contact Us!</a>
+        </div>
+        <div class="col">
+            <h3>Account</h3>
+            <a href="../html/login.html">Sign in</a>
+            <a href="../html/signup.html">Sign Up</a>
+        </div>
+        <div class="col install">
+            <h3>Services</h3>
+            <p>All over Nepal Service</p>
+            <img src="../images/nepal.png" alt="nepal map" width="180px">
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center;">
+        <p>Copyright © 2023 | Bonsaia | Team 3 | All rights reserved </p>
+        <p> Terms and Condititons | Privacy Policy </p>
+    </div>
+    <!-- --------------end of the all footers----------------------------- -->
+
+</body>
+
+</html>

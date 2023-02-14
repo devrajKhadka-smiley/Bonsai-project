@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--this meta cntain the author, descirption of the wedbsite-->
+    <meta name="author" content="dev raj khadka">
+    <meta name="description" content="all about my portfolio">
+
+    <!-- ----this is the title of my webiste -->
+    <title>My personal website</title>
+
+    <!-- -----this is to connect the html and css file--------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -------linking js file -->
+    <script src="sc.js"></script>
+
+    <style>
+        .info {
+            text-align: justify;
+            /*the text becomes justified*/
+            font-size: 22px;
+        }
+        
+        .button {
+            color: #c95954;
+            /*this changes cursor to a pointer*/
+            cursor: pointer;
+            border: 5px solid teal;
+            /*this curves the corners of the border*/
+            border-radius: 35px;
+            padding: 12px;
+            background-color: #9ebfbf;
+        }
+        
+        a.button:hover {
+            color: whitesmoke;
+            /*changes text color to whitesmoke when a mouse hovers above it*/
+            text-transform: uppercase;
+            /*changes all text to captial(uppercase) when a mouse hovers above it*/
+        }
+        
+        ul {
+            list-style-type: square;
+            /*change list from bullets to squares*/
+        }
+        
+        .abouttable1 {
+            width: 30%;
+        }
+        
+        .abouttable2 {
+            width: 50%;
+            padding: 20px;
+        }
+        
+        .percent {
+            background-color: darkgrey;
+            /*changes background color to darkgrey*/
+            position: relative;
+            width: 100%;
+            display: block;
+            /*starts on a new line and takes up entire width*/
+            margin-top: 5px;
+            /*adds margin to the top of height 5px*/
+            height: 8px;
+        }
+        
+        .percent div {
+            position: absolute;
+            height: 100%;
+            background-color: #0B4F50;
+            /*changes background color to #0b4f50*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contactme">Contact me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p> Developer</p>
+                <h1>Hi, I'm <span>D</span>ev Raj</h1>
+            </div>
+            <a href="./cv/index.html" class="btn"><span class="dwclr">View  CV</span></a>
+        </div>
+    </div>
+
+
+    <!-- ---------this is about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="">This is about Me!</h1><br>
+                    <p style="font-size: 20px; line-height: 26px; ">
+                        I am enough of an Dev. to draw freely upon my imagination. Hi, I am <span style="color: red;">Dev Raj Khadka.</span> I keep my interest on coding, playing online games and of course working with my team to draw all the desire work.
+                    </p>
+                    <br>
+                    <p style="font-size: 20px; line-height: 26px; ">I am outgoing, dedicated and open-minded person. I have done my SEE, +2, and Junior level computer engineering(CTEVT) from <span><b>Tilingatar Secondary</p>
+                    </p><br>
+                    <p>Find more about me in my CV. Be sure to leave a feedback. </p>
+                    <br>
+                    <p>!! Keep smiling and keep learning !!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr style="height: 5px; background-color: ghostwhite;">
+    <br>
+    <div class="info" style="margin-left: 50px; margin-right: 40px;">
+        <!--This is the sub-topic in about me section-->
+        <h2 style="text-decoration: underline;">Experience</h2>
+        <!--This is experience section of the CV-->
+        <br>
+        <!--This beings a new line-->
+        <table>
+            <tr>
+                <td class="abouttable1" style="vertical-align: 1px;">
+                    <!--This makes the text being fom the top left of the cell-->
+                    <b>Web Developer</b>
+                    <br>
+                    <!--This beings a new line-->
+                    Bonsaia
+                    <br>
+                    <!--This beings a new line-->
+                    2019 - Ongoing
+                    <br>
+                    <!--This beings a new line-->
+                    Team Leader
+                    <br><br>
+                    <!--This beings a new line-->
+                </td>
+
+                <td style="padding-left: 10px;">
+                    <!--This adds space to the right of the cell and justifies the text-->
+                    <ul>
+                        <li>Develop custom web design solutions</li>
+                        <li>Collaborated with corporations and helped them build powerful websites</li>
+                        <li>Designed an e-commerce web app for bonsai</li>
+                    </ul>
+                    <br>
+                    <!--This beings a new line-->
+                </td>
+            </tr>
+
+            <tr>
+                <td class="abouttable1" style="vertical-align: 1px;">
+                    <!--This makes the text being fom the top left of the cell-->
+                    <b>Teacher</b>
+                    <br>
+                    <!--This beings a new line-->
+                    Tilingatar Sec. School
+                    <br>
+                    <!--This beings a new line-->
+                    2015 - 2018
+                </td>
+
+                <td style="padding-left: 10px;">
+                    <!--This adds space to the right of the cell-->
+                    <ul>
+                        <li>Was working as a teacher while in Intern of CTEVT.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!--This is the end of brief description of my previous projects in about me section(in unordered list format)-->
+    </div>
+    <br>
+    <hr style="height: 5px; background-color: ghostwhite;">
+    <br>
+    <div class="info">
+        <table style="width: 100%; border-spacing: 10px;">
+            <tr>
+                <th class="abouttable2">
+                    <h2 style="text-decoration: underline; text-align: center;">Expertise</h2>
+                </th>
+
+                <th class="abouttable2">
+                    <h2 style="text-decoration: underline; text-align: center">Languages</h2>
+                </th>
+
+            </tr>
+            <tr>
+                <td class="abouttable2">
+                    <span class="text">Python</span>
+                        <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                        <br>
+                        <!--This beings a new line-->
+                        <span class="text">PHP</span>
+                        <span class="percent">
+                        <div style="width: 90%;"></div>
+                    </span>
+                        <br>
+                        <!--This beings a new line-->
+                        <span class="text">C++</span>
+                        <span class="percent">
+                        <div style="width: 80%;"></div>
+                    </span>
+                        <br>
+                        <!--This beings a new line-->
+                        <span class="text">HTML</span>
+                        <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                        </td>
+                        <td class="abouttable2">
+                            <span class="text">Nepali</span>
+                            <span class="percent">
+                        <div style="width: 80%;"></div>
+                    </span>
+                            <br>
+                            <!--This beings a new line-->
+                            <span class="text">English</span>
+                            <span class="percent">
+                        <div style="width: 90%;"></div>
+                    </span>
+                            <br>
+                            <!--This beings a new line-->
+                            <span class="text">Hindi</span>
+                            <span class="percent">
+                        <div style="width: 70%;"></div>
+                    </span>
+                        </td>
+                        </tr>
+                        </table>
+                </div>
+                <br>
+                <br>
+
+                <hr style="height: 5px; background-color: ghostwhite;">
+                <br>
+                <br>
+                <!-- this is contact me -->
+                <div id="contactme" style="margin-bottom: -100px;">
+                    <section id="Contactme">
+                        <h1 class="form_header">Contact Me</h1>
+                    </section>
+                </div>
+                <section id="contactsec">
+                    <br>
+                    <div class="contactcont">
+                        <table class="contacttable">
+                            <tr>
+                                <form name="contactform" onsubmit="validateform()">
+                                    <label>Name:</label>
+                                    <br>
+                                    <input type="text" placeholder="Full Name" class="contform" name="name">
+                                    <br>
+                                    <label>Email:</label>
+                                    <br>
+                                    <input type="email" placeholder="abc@domain.com" class="contform" name="email">
+                                    <br>
+                                    <label>Subject:</label>
+                                    <br>
+                                    <input type="text" placeholder="Subject" class="contform" name="subject">
+                                    <br>
+                                    <label>Message:</label>
+                                    <br>
+                                    <textarea placeholder="Type a message" rows="6" class="contform" name="message"></textarea>
+                                    <br>
+                                    <input type="submit" name="Submit" class="contform" style="width: 20%; padding: 5px 0 5px 0;">
+                                </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <!-- ------------------------------ -->
+                <div class="copyright">
+                    <P>Copyright&copy; Dev Raj Khadka. Team Three, 2022</P>
+                </div>
+                <!-- ------------------------------------- -->
+            </div>
+</body>
+
+</html>

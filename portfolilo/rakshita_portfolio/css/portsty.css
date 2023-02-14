@@ -1,0 +1,310 @@
+/*This is code for whole web page*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*padding and border are included in the width and height*/
+    scroll-behavior: smooth;
+    /*transition from links are smooth scroll instead of sudden change*/
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    /*doesnt change the layout around it*/
+    color: #d4d6d6;
+    /*Changes text color to #d4d6d6*/
+}
+
+/*This is code for navigation bar*/
+.navigation {
+    width: 100%;
+    height: 70px;
+    /*adds 5px worth of space in the navigation bar*/
+    display: flex;
+    /*Displays the content as a flexible stucture*/
+    align-items: center;
+    /*Aligns all the items to the center*/
+    background: black;
+    /*Changes the background color to black*/
+    justify-content: space-between;
+    /*This keeps space between the content*/
+    position: fixed;
+    /*This fixes the navigation bar at the top of the page*/
+    z-index: 1;
+    /*this specifies that the navigation bar is stacked on top of the page*/
+}
+
+.port {
+    font-size: 40px;
+    /*The text becomes 40px in size*/
+    color: #db7e18;
+    /*Changes text color to #db7e18*/
+    padding-left: 20px;
+    /*adds 20px worth of space to the left of the logo*/
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    /*removes list style and presents in a single line format*/
+    font-size: 25px;
+    /*The text becomes 25px in size*/
+    padding-right: 40px;
+    /*adds 40px worth of space in the right of the navigation links*/
+}
+
+.navlink {
+    text-decoration: none;
+    /*removes any decoration on the text and changes it to simple font*/
+    color: #dba972;
+    /*Changes text color to #dba972*/
+    margin: 5px;
+    padding: 10px;
+    transition: smooth;
+}
+
+a.navlink:hover {
+    text-transform: uppercase;
+    /*This is to change the text to uppercase when a mouse hovers over it*/
+    background-color: darkred;
+    /*This is to change the background colour to darkred when a mouse hovers over it*/
+    color: ghostwhite;
+    /*This is to change the text color to ghostwhite when a mouse hovers over it*/
+}
+
+/*This is home section of the page*/
+.home {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*This keeps space between the content*/
+    padding-left: 200px;
+    /*adds 200px worth of space to the left*/
+    color: white;
+    /*changes text color to white*/
+    background-color: #0c0c0d;
+    /*changes background color to #0c0c0d*/
+}
+
+.homeheading,
+.homename {
+    display: block;
+    /*starts on a new line and takes up take up as much horizontal space as they can*/
+    text-transform: capitalize;
+    /*The first letter of each word becomes capitalized*/
+    font-size: 50px;
+    margin: 30px 0;
+    /*top has 30px , right has 0px margin*/
+    font-weight: 10;
+    /*determines the thickness of the font*/
+    color: #e0a15c;
+    /*changes text color to #e0a15c*/
+}
+
+.homename {
+    font-size: 80px;
+}
+
+.homeimgcont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-right: 200px;
+    flex: 0 0 40%;
+    /*The length of the item is 40% of the total length*/
+    color: #e0a15c;
+}
+
+
+.homeimg {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    border-radius: 30px;
+    border: 12px solid #db7e18;
+}
+
+/*This is About Me section*/
+#aboutsec {
+    position: relative;
+    padding: 80px;
+    background-color: #181919;
+    /*changes background color to #181919*/
+    height: 100%;
+    width: 100%;
+}
+
+.aboutcont {
+    margin: 20px;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    color: #c95954;
+    /*changes text color to #c95954*/
+    font-family: ArialBlack, sans;
+    /*changes text font to Arial Black from the sans family*/
+    border-top: 10px solid #c95954;
+    border-bottom: 10px solid #c95954;
+    border-radius: 35px;
+}
+
+.aboutimgcont {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 0 150px 0 50px;
+    flex: 0 0 40%;
+    /*The length of the item is 40% of the total length*/
+}
+
+.aboutimg {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    border: 12px solid #c95954;
+    border-radius: 40px;
+}
+
+.info {
+    text-align: justify;
+    /*the text becomes justified*/
+    font-size: 22px;
+}
+
+.button {
+    color: #c95954;
+    /*this changes cursor to a pointer*/
+    cursor: pointer;
+    border: 5px solid teal;
+    /*this curves the corners of the border*/
+    border-radius: 35px;
+    padding: 12px;
+    background-color: #9ebfbf;
+}
+
+a.button:hover {
+    color: whitesmoke;
+    /*changes text color to whitesmoke when a mouse hovers above it*/
+    text-transform: uppercase;
+    /*changes all text to captial(uppercase) when a mouse hovers above it*/
+}
+
+ul {
+    list-style-type: square;
+    /*change list from bullets to squares*/
+}
+
+.abouttable1 {
+    width: 30%;
+}
+
+.abouttable2 {
+    width: 50%;
+    padding: 20px;
+}
+
+.percent {
+    background-color: darkgrey;
+    /*changes background color to darkgrey*/
+    position: relative;
+    width: 100%;
+    display: block;
+    /*starts on a new line and takes up entire width*/
+    margin-top: 5px;
+    /*adds margin to the top of height 5px*/
+    height: 8px;
+}
+
+.percent div {
+    position: absolute;
+    height: 100%;
+    background-color: #0B4F50;
+    /*changes background color to #0b4f50*/
+}
+
+/*This is Contact section*/
+#contactsec {
+    position: relative;
+    padding: 50px;
+    background-color: #242526;
+    height: 650px;
+    width: 100%;
+    color: #e1c391;
+}
+
+#contactsec .heading {
+    color: #c95954;
+}
+
+.contactcont {
+    margin: 10px;
+    font-size: 21px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contblock {
+    width: 50%;
+    text-align: justify;
+}
+
+.contactlink {
+    color: floralwhite;
+    /*this changes cursor to a pointer*/
+    cursor: pointer;
+    text-decoration: none;
+    /*changes text to simple format*/
+    font-size: 25px;
+    display: inline-flex;
+    /*the fles container becomes inline*/
+}
+
+a.contactlink:hover {
+    color: red;
+    /*Changes text color to red when a mouse hovers above it*/
+}
+
+.contacttable {
+    text-align: justify;
+    /*justifies the given text*/
+    border-spacing: 80px;
+}
+
+.contacttd {
+    width: 50%;
+    /*Uses 50% of the total width*/
+    font-size: 19px;
+}
+
+.contform {
+    width: 100%;
+    font-size: 15px;
+    background-color: blanchedalmond;
+    /*This changes background color to blanchedalmond*/
+}
+
+footer {
+    text-transform: capitalize;
+    /*Changes first letter of all the words to uppercase*/
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+    /*changes background color to black*/
+    color: white;
+    /*changes text color to white*/
+}

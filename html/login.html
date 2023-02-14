@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------imp meta tags-------------- -->
+    <meta name="author" content="team3">
+    <meta name="keyword" content="team3, bonsaia, bonsaiplants, bonsai">
+    <meta name="descirption" content="ecommerce website on bonsai plants">
+    <!-- ---------end of meta tags----------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- ------------linking css file --------------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ------------linking css file --------------------- -->
+
+    <!-- ----------linking js file---------------- -->
+    <script src="../js/main.js"></script>
+    <!-- ----------linking js file---------------- -->
+
+    <!-- ---------title of the website----------- -->
+    <title>Login - Bonsaia</title>
+    <!-- ------end of the title of the website------ -->
+
+    <script>
+    </script>
+
+</head>
+
+<body>
+    <!-- --header section starts-- -->
+    <header class="header">
+        <div class="upper_header">
+            <a href="../index.html" class="logo"><img src="../images/Logo.png" width="180px"></a>
+
+
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchterm" placeholder="What are you looking for...?">
+                    <button type="submit" class="searchbutton" onclick="available()"><a href="#shopsec"></a>
+                        <img src="../images/search.png" width="15px" height="15px"><a href="#shopsec"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="icons">
+                <button onclick="cart()" style="cursor: pointer;"><img src="../images/chart.png" width="30px"
+                        height="30px"></button>
+                <!-- &nbsp; is the entity in html to give a space -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./login.html" class="user"><img src="../images/user.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQs</a>
+                <a href="./research.html">Research</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contactus.html">Contact Us!</a>
+            </nav>
+        </div>
+    </header>
+    <!-- --header section ends-- -->
+
+    <div class="container">
+        <form name="loginform" onsubmit="validateform()">
+            <h1>Login!</h1>
+            <hr style="width: 22%;">
+            <br>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Your Username" name="username">
+            </div>
+
+            <br>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="text" placeholder="Enter Your Password" name="password">
+            </div>
+
+            <input type="submit" name="Login" class="button" value="Login!">
+            <br>
+
+            <div class="loginbottom">
+                Don't have an account yet?<br>
+                <br>
+                <a href="./signup.html">Sign Up!</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- --------------------footer-------------------- -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/Logo.png" alt="logo" width="180px" style="margin-top: -30px;">
+            <br>
+            <h3>Contact</h3>
+            <br>
+            <p><strong>Address: </strong> Kamalpokhari road-12, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>+977 9876567654, 9878987656</p>
+            <p><strong>Hours: </strong>10:00 am - 08:00 Pm, Sun-Sat</p>
+        </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <br>
+            <a href="./faq.html">FAQS</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./research.html">Research</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contactus.html">Contact Us!</a>
+        </div>
+        <div class="col">
+            <h3>Account</h3>
+            <a href="./login.html">Sign in</a>
+            <a href="./signup.html">Sign Up</a>
+        </div>
+        <div class="col install">
+            <h3>Services</h3>
+            <p>All over Nepal Service</p>
+            <img src="../images/nepal.png" alt="nepal map" width="180px">
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center;">
+        <p>Copyright © 2023 | Bonsaia | Team 3 | All rights reserved </p>
+        <p> Terms and Condititons | Privacy Policy </p>
+    </div>
+    <!-- --------------end of the all footers----------------------------- -->
+
+</body>
+
+<!--This is javascript portion of contact section-->
+<script type="text/JavaScript">
+    function validateform() {
+        // This is for form validation in login
+         var username = document.forms["loginform"]["username"].value; 
+         var password = document.forms["loginform"]["password"].value; 
+         
+         if (username == "" || password == "") {
+            /*This checks if any of the fields are blank*/ 
+            alert("Empty field found! Please fill the form completely.");
+            /*This code works only if any of the fields are blank(as a popup in the page)*/ 
+        } 
+        else {
+            alert("Welcome " + username + " !"); 
+            /*This code works if all of the fields are filled(as a popup in the page)*/ 
+        } 
+    }
+</script>
+<!--This is the end of javascript portion of contact section-->
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rakshita Baidya CV</title>
+    <meta name="description" content="just basic html">
+    <meta name="keywords" content="webdesigning,portfolio,cv,rakshita">
+    <meta name="author" content="Rakshita">
+    <link rel="stylesheet" type="text/css" href="../css/portsty.css">
+    <!--This is to link css file to the html file-->
+
+    <!--This is an inline css of cv file-->
+    <style>
+        #cvsec {
+            padding-top: 70px;
+            /*adds 70px worth of space to the top*/
+            display: flex;
+            /*Displays the content as a flexible stucture*/
+            justify-content: center;
+            /*centers the content*/
+            font-size: 20px;
+            /*changes text size to 20px*/
+            background-color: #181919;
+            /*changes background color to #181919*/
+        }
+
+        .cv {
+            background-color: #E9FDFD;
+            /*changes background color to #e9fdfd*/
+            width: 80%;
+            /*the content is displayed in 80% of the total width*/
+            position: relative;
+            /*doesnt change the layout around it*/
+            border: 3px solid black;
+            /*adds a border of 3px of solid black color*/
+            table-layout: fixed;
+            /*fixes the table layout according to the first column and row*/
+            padding: 40px;
+            color: #324B4C;
+            /*changes text color to #324b4c*/
+            border-spacing: 50px;
+            /*The space between each cell of the table is 50px*/
+        }
+
+        .cvtd {
+            width: 58%;
+            /*uses 58% ot the row*/
+            padding-left: 110px;
+            color: white;
+        }
+
+        .cvtd2 {
+            width: 42%;
+            /*uses 42% of the row*/
+            padding-left: 20px;
+            display: inline-block;
+            /*displays items horizontally*/
+            font-size: 18px;
+        }
+
+        a.cvtd2 {
+            color: #324B4C;
+            text-decoration: none;
+        }
+
+        .cvhr {
+            height: 5px;
+            background-color: #173232;
+        }
+
+        .cvhome {
+            color: #324B4C;
+            font-size: 30px;
+            text-decoration: underline;
+            /*underlines the text*/
+            vertical-align: 1px;
+            /*begins the text from top left 1px of the cell*/
+        }
+
+        .percent {
+            background-color: darkgrey;
+            /*changes background color to darkgrey*/
+            position: relative;
+            width: 100%;
+            display: block;
+            /*starts on a new line and takes up entire width*/
+            margin-top: 5px;
+            /*adds margin to the top of height 5px*/
+            height: 8px;
+        }
+
+        .percent div {
+            position: absolute;
+            height: 100%;
+            background-color: #0B4F50;
+            /*changes background color to #0b4f50*/
+        }
+
+        .cvedex {
+            width: 50%;
+            /*takes up 50% of the total width*/
+            padding-right: 50px;
+        }
+
+        .cvlastrow {
+            width: 33.3%;
+            /*each cell takes 33.3% of the total width*/
+            vertical-align: 1px;
+            /*begins the text from top left 1px of the cell*/
+            padding-right: 30px;
+            padding-left: 30px;
+            text-align: justify;
+            padding-top: 20px;
+        }
+    </style>
+    <!--This is the end of the css file of cv-->
+</head>
+
+<body>
+    <!--This is navigation section of my portfolio-->
+    <div>
+        <nav class="navigation">
+            <!--This is the navigation bar of my portfolio-->
+            <h1 class="port">RB</h1>
+            <!--This is the logo of my portfolio-->
+            <ul class="nav">
+                <li>
+                    <a href="../html/portfolio.html" class="navlink">Home</a>
+                    <!--This is to link to the home section of my portfolio-->
+                </li>
+                <li>
+                    <a href="../html/portfolio.html#aboutsec" class="navlink">About Me</a>
+                    <!--This is to link to the about me section of my portfolio-->
+                </li>
+                <li>
+                    <a href="../html/cv.html" class="navlink">CV</a>
+                    <!--This is to link to the CV-->
+                </li>
+                <li>
+                    <a href="../html/portfolio.html#contactsec" class="navlink">Contact Me</a>
+                    <!--This is to link to the contact me section of my portfolio-->
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--This is end of navigation section of my portfolio-->
+
+    <!--This is the CV section of my portfolio-->
+    <section id="cvsec">
+        <table class="cv">
+            <tr>
+                <!--This is the first row of the table-->
+                <td class="cvtd" style="background-color: #324B4C;">
+                    <!--This is changes bcakground color of first cell of the table-->
+                    <br><br>
+                    <span style="font-size: 45px;"><b>Rakshita Baidya</b></span>
+                    <br>
+                    <span>WEB DEVELOPER</span>
+                    <br><br><br>
+                </td>
+
+                <td>
+                    <a href="tel:+977-9746288680" class="cvtd2">+977-9746288680</a>
+                    <!--This links my phone number-->
+                    <br>
+                    <a href="email:rakshitabaidya1@gmail.com" class="cvtd2">rakshitabaidya1@gmail.com</a>
+                    <!--This links my email address-->
+                    <br>
+                    <span class="cvtd2">Lagankhel, Lalitpur</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <hr class="cvhr">
+                </td>
+                <!--This is adds a horizontal line that seperates each topic-->
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h2 class="cvheader">About Me</h2>
+                    <!--This is the about me section of the CV-->
+                    <br>
+                    <!--This beings a new line-->
+                    <p style="padding-right: 20px; text-align: justify;">
+                        <!--This adds space to the right of the cell and justifies the text-->
+                        I have been working in the IT industry for the last 8 years and have a passion for creating
+                        practical and aesthetic websites. I tend to be a team player and enjoy the process of learning
+                        and growing. I am very solution-oriented and have an eye for detail.
+                        I have years of experience in website design.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <hr class="cvhr">
+                </td>
+                <!--This is adds a horizontal line that seperates each topic-->
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h2 class="cvheader">Experience</h2>
+                    <!--This is experience section of the CV-->
+                    <br>
+                    <!--This beings a new line-->
+                    <table>
+                        <tr>
+                            <td style="vertical-align: 1px;">
+                                <!--This makes the text being fom the top left of the cell-->
+                                <b>Web Developer</b>
+                                <br>
+                                <!--This beings a new line-->
+                                Bonsaia
+                                <br>
+                                <!--This beings a new line-->
+                                2019 - Ongoing
+                                <br>
+                                <!--This beings a new line-->
+                                Team Leader
+                                <br><br>
+                                <!--This beings a new line-->
+                            </td>
+
+                            <td style="padding-right: 20px; text-align:justify;">
+                                <!--This adds space to the right of the cell and justifies the text-->
+                                <ul>
+                                    <li>Develop custom web design solutions</li>
+                                    <li>Collaborated with corporations and helped them build powerful websites</li>
+                                    <li>Designed an e-commerce web app for bonsai</li>
+                                </ul>
+                                <br>
+                                <!--This beings a new line-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="vertical-align: 1px;">
+                                <!--This makes the text being fom the top left of the cell-->
+                                <b>Web Development Assistant</b>
+                                <br>
+                                <!--This beings a new line-->
+                                Altimate IT Solution
+                                <br>
+                                <!--This beings a new line-->
+                                2015 - 2018
+                            </td>
+
+                            <td style="padding-right: 20px; text-align:justify;">
+                                <!--This adds space to the right of the cell and justifies the text-->
+                                <ul>
+                                    <li>Maintained a user satisfaction rating of 85% over the years by providing tech
+                                        support to clients
+                                    </li>
+                                    <li>Increased monthly productivity by 65% by creating a functioning software to
+                                        organize data and track bugs</li>
+                                    <li>Boosted team efficiency by 10% by building and maintaining documentation sites
+                                        by using multiple programming languages</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <hr class="cvhr">
+                </td>
+                <!--This makes the text being fom the top left of the cell-->
+            </tr>
+
+            <tr>
+                <td style="padding-left: 60px;">
+                    <!--This adds space to the right of the cell-->
+                    <h2 class="cvheader">Education</h2>
+                </td>
+                <td>
+                    <h2 class="cvheader">Expertise</h2>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding-left: 60px;">
+                    <!--This adds space to the right of the cell-->
+                    <b>2012 - 2015</b>
+                    <br>
+                    <!--This beings a new line-->
+                    Islington College
+                    <br>
+                    <!--This beings a new line-->
+                    Bachelors (Hons.) in Computing
+                    <br><br>
+                    <!--This beings a new line-->
+
+                    <b>2012</b>
+                    <br>
+                    <!--This beings a new line-->
+                    United Academy
+                    <br>
+                    <!--This beings a new line-->
+                    Science
+                    <br><br>
+                    <!--This beings a new line-->
+
+                    <b>2001 - 2010</b>
+                    <br>
+                    <!--This beings a new line-->
+                    St. Mary's Secondary School
+                    <br>
+                    <!--This beings a new line-->
+                    SEE
+                </td>
+
+                <td class="cvedex">
+                    <span class="text">Python</span>
+                    <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                    <br>
+                    <!--This beings a new line-->
+                    <span class="text">PHP</span>
+                    <span class="percent">
+                        <div style="width: 90%;"></div>
+                    </span>
+                    <br>
+                    <!--This beings a new line-->
+                    <span class="text">Javascript</span>
+                    <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                    <br>
+                    <!--This beings a new line-->
+                    <span class="text">C++</span>
+                    <span class="percent">
+                        <div style="width: 80%;"></div>
+                    </span>
+                    <br>
+                    <!--This beings a new line-->
+                    <span class="text">HTML</span>
+                    <span class="percent">
+                        <div style="width: 85%;"></div>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <hr class="cvhr">
+                </td>
+                <!--This makes the text being fom the top left of the cell-->
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <th class="cvlastrow">
+                                <h2 class="cvheader">Language</h2>
+                            </th>
+
+                            <th class="cvlastrow">
+                                <h2 class="cvheader">Volunteer</h2>
+                            </th>
+                            <th class="cvlastrow">
+                                <h2 class="cvheader">Reference</h2>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td class="cvlastrow">
+                                <span class="text">Nepali</span>
+                                <span class="percent">
+                                    <div style="width: 80%;"></div>
+                                </span>
+                                <br>
+                                <!--This beings a new line-->
+                                <span class="text">English</span>
+                                <span class="percent">
+                                    <div style="width: 90%;"></div>
+                                </span>
+                                <br>
+                                <!--This beings a new line-->
+                                <span class="text">Hindi</span>
+                                <span class="percent">
+                                    <div style="width: 70%;"></div>
+                                </span>
+                            </td>
+
+                            <td class="cvlastrow">
+                                <ul style="padding-right: 15px">
+                                    <li>Visit bootcamps</li>
+                                    <li>At Orphanages once every 2 months</li>
+                                    <li>At Old-Age homes every 3 months</li>
+                                    <li>General member of Rotract Club of Patan South</li>
+                                </ul>
+                            </td>
+
+                            <td class="cvlastrow">
+                                <span><b>Ms. Nirvisha Rajlawot</b></span>
+                                <br>
+                                <!--This beings a new line-->
+                                Altimate IT Solution
+                                <br>
+                                <!--This beings a new line-->
+                                Vice-President
+                                <br>
+                                <!--This beings a new line-->
+                                +977-9849052787
+                                <br><br>
+                                <!--This beings a new line-->
+
+                                <span><b>Mr. Adarsha Sharma</b></span>
+                                <br>
+                                <!--This beings a new line-->
+                                Technet
+                                <br>
+                                <!--This beings a new line-->
+                                Manager
+                                <br>
+                                <!--This beings a new line-->
+                                +123-456-7809
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!--This is the footer portion of the portfolio-->
+    <footer>
+        Copyright &copy; 2023 | Rakshita Baidya | All rights reserved
+        <br>
+        <!--This beings a new line-->
+        Privacy Policy | Terms and Conditions
+    </footer>
+    <!--This is the end of the footer portion of the portfolio-->
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+/*This is code for whole web page*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*padding and border are included in the width and height*/
+    scroll-behavior: smooth;
+    /*transition from links are smooth scroll instead of sudden change*/
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    /*doesnt change the layout around it*/
+    color: white;
+    /*Changes text color to #d4d6d6*/
+    background-color: #323b4c;
+}
+
+/*This is code for navigation bar*/
+.navigation {
+    width: 100%;
+    height: 70px;
+    /*adds 5px worth of space in the navigation bar*/
+    display: flex;
+    /*Displays the content as a flexible stucture*/
+    align-items: center;
+    /*Aligns all the items to the center*/
+    justify-content: space-between;
+    /*This keeps space between the content*/
+}
+
+.port {
+    font-size: 40px;
+    /*The text becomes 40px in size*/
+    /*Changes text color to #db7e18*/
+    padding-left: 20px;
+    /*adds 20px worth of space to the left of the logo*/
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    /*removes list style and presents in a single line format*/
+    font-size: 25px;
+    /*The text becomes 25px in size*/
+    padding-right: 40px;
+    /*adds 40px worth of space in the right of the navigation links*/
+}
+
+.navlink {
+    text-decoration: none;
+    /*removes any decoration on the text and changes it to simple font*/
+    margin: 5px;
+    padding: 10px;
+    transition: smooth;
+    color: inherit;
+}
+
+/*end of nav*/
+
+/*home*/
+.home {
+    display: flex;
+}
+
+.home img {
+    padding: 0 50px;
+    flex: 50%;
+}
+
+.homeright {
+    flex: 40%;
+    padding: 50px;
+    padding-top: 250px;
+}
+
+/*end of home*/
+
+/*about*/
+.About {
+    padding: 50px;
+    font-size: 20px;
+}
+
+.About2,
+.About3 {
+    display: flex;
+    padding-left: 200px;
+}
+
+.About2-1,
+.About3-1 {
+    flex: 40%;
+}
+
+.About2-1 ul,
+.About3-1 ul {
+    padding-left: 30px;
+}
+
+.percent {
+    background-color: rgb(255, 0, 0);
+    /*changes background color to darkgrey*/
+    position: relative;
+    width: 50%;
+    display: block;
+    /*starts on a new line and takes up entire width*/
+    margin-top: 5px;
+    /*adds margin to the top of height 5px*/
+    height: 8px;
+}
+
+.percent div {
+    position: absolute;
+    height: 100%;
+    background-color: #ffffff;
+    /*changes background color to #0b4f50*/
+}
+
+/*end of about*/
+
+/*This is Contact section*/
+#contactsec {
+    padding: 20px;
+    height: 500px;
+    width: 100%;
+}
+
+.contactcont {
+    margin: 10px;
+    font-size: 21px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contacttable {
+    text-align: justify;
+    /*justifies the given text*/
+    border-spacing: 50px;
+}
+
+.contacttd {
+    width: 50%;
+    /*Uses 50% of the total width*/
+    font-size: 19px;
+}
+
+.contform {
+    width: 100%;
+    font-size: 15px;
+}
+
+footer {
+    text-transform: capitalize;
+    /*Changes first letter of all the words to uppercase*/
+    text-align: center;
+    font-size: 15px;
+}

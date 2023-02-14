@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------imp meta tags-------------- -->
+    <meta name="author" content="team3">
+    <meta name="keyword" content="team3, bonsaia, bonsaiplants, bonsai">
+    <meta name="descirption" content="ecommerce website on bonsai plants">
+    <!-- ---------end of meta tags----------------- -->
+
+    <!-- ------------linking css file --------------------- -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ------------linking css file --------------------- -->
+
+
+    <!-- ------------linking js file ------------->
+    <script src="../js/main.js"></script>
+    <!-- ------------linking js file --------------------- -->
+
+    <!-- ---------title of the website----------- -->
+    <title>Shop - Bonsaia</title>
+    <!-- ------end of the title of the website------ -->
+
+    <style>
+        /* -------- shop section------- */
+
+        #page-header {
+            background-image: url(../images/b1.jpg);
+            width: 100%;
+            height: 25vh;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 14px
+        }
+
+        #page-header p span {
+            color: red;
+        }
+
+        #product1 {
+            text-align: center;
+            margin-top: -70px;
+        }
+
+        #product1 .pro-container {
+            display: flex;
+            padding-top: 20px;
+            margin-bottom: 20px;
+            margin-left: -70px;
+            margin-right: 70px;
+        }
+
+        #product1 .pro {
+            display: flex;
+            margin-left: -90px;
+            width: 23%;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid rgb(99, 88, 88);
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 15px 0;
+            margin-left: 80px;
+            margin-right: 80px;
+            transition: 0.2s ease;
+        }
+
+        #product1 .pro:hover {
+            box-shadow: 20px 20px 20px;
+        }
+
+        #product1 .pro .desc {
+            text-align: start;
+            padding: 10px 0;
+        }
+
+        #product1 .pro .desc span {
+            color: #606063;
+            font-size: 12px;
+        }
+
+        #product1 .pro .desc h5 {
+            padding-top: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #088176;
+        }
+
+        #product1 .pro h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #088176;
+            text-align: left;
+        }
+
+        #product1 .pro .cart {
+            border-radius: 40px;
+            color: #088178;
+        }
+
+        #product1 .pro img {
+            width: 100%;
+            border-radius: 20px;
+            border-radius: 20px;
+        }
+
+        #pagination {
+            margin-top: -200px;
+            text-align: center;
+        }
+
+        #pagination a {
+            text-decoration: none;
+            background-color: #088178;
+            padding: 15px 20px;
+            color: white;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        /* -------- end of shop section------- */
+    </style>
+</head>
+
+<body>
+    <!-- --header section starts-- -->
+    <header class="header">
+        <div class="upper_header">
+            <a href="../index.html" class="logo"><img src="../images/Logo.png" width="180px"></a>
+
+
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchterm" placeholder="What are you looking for...?">
+                    <button type="submit" class="searchbutton" onclick="available()"><a href="#shopsec"></a>
+                        <img src="../images/search.png" width="15px" height="15px"><a href="#shopsec"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="icons">
+                <button onclick="cart()" style="cursor: pointer;"><img src="../images/chart.png" width="30px"
+                        height="30px"></button>
+                <!-- &nbsp; is the entity in html to give a space -->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="./login.html" class="user"><img src="../images/user.png" width="30px" height="30px"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./faq.html">FAQs</a>
+                <a href="./research.html">Research</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contactus.html">Contact Us!</a>
+            </nav>
+        </div>
+    </header>
+    <!-- --header section ends-- -->
+
+    <!-- -------shop section----------- -->
+    <section id="page-header">
+        <h2>#plant plants</h2>
+        <p> Save more with Coupons & save up to <span>60% off</span></p>
+    </section>
+    <!-- -------end of shop section----------- -->
+
+    <!-- ---------with types of bonsai------------ -->
+    <section id="product1" class="section-p1">
+        <h2>Feature products</h2>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="../products/Juniper.html"><img src="../images/beginner/Juniper.jpg" alt="Juniper">
+                    <div class="desc">
+                        <span>Begineer Bonsai</span>
+                        <h5>Green Juniper Bonsai</h5>
+                        <p>Due to its low maintenance needs and gorgeous foliage, juniper trees are a particularly
+                            well-liked option for bonsai.</p>
+                    </div>
+                    <h4 style="text-decoration: line-through; color: red;">Rs.2999</h4>
+                    <h3>Rs. 1999</h3>
+                </a>
+            </div>
+            <!-- ------------------------------------- -->
+            <div class="pro">
+                <a href="../products/SatsukiAzalea.html"><img src="../images/beginner/Satsuki.jpg" alt="Satsuki">
+                    <br>
+                    <div class="desc">
+                        <span>Begineer Bonsai</span>
+                        <h5>Satsuki Azalea</h5>
+                        <p>Satsuki azaleas are a cultivar group of the plant Rhododendron indicum, a kind of azalea that
+                            the Japanese have extensively cultivated and crossed.</p>
+                    </div>
+                    <h4 style="text-decoration: line-through; color: red;">Rs.4600</h4>
+                    <h3>Rs. 4500</h3>
+                </a>
+            </div>
+            <!-- -------------------------------------- -->
+            <!-- ------------------------------------------- -->
+            <div class="pro">
+                <a href="../products/Chineseelm.html"><img src="../images/beginner/Elm.jpg" alt="Juniper">
+                    <div class="desc">
+                        <span>Begineer Bonsai</span>
+                        <h5>Chinese elm</h5>
+                        <p>Chinese elms are a highly popular Bonsai tree for beginners since they are robust trees.</p>
+                    </div>
+                    <h3>Rs. 1999</h3>
+                </a>
+            </div>
+            <!-- ------------------------------------------- -->
+
+        </div>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="../products/Japanesewinterberry.html"><img src="../images/outdoor/winterberry.jpg"
+                        alt="Juniper">
+                    <div class="desc">
+                        <span>Outdoor Bonsai</span>
+                        <h5>Japanese Winterberry</h5>
+                        <p>The Japanese Winterberry is a tiny, deciduous tree or shrub with pale pink blooms and dark
+                            green, serrated leaves.</p>
+                    </div>
+                    <h3>Rs. 2500</h3>
+                </a>
+            </div>
+            <div class="pro" style="margin-left: 80px;">
+                <a href="../products/Japanesemaple.html"><img src="../images/outdoor/maple.jpg" alt="Juniper"
+                        width=250px" height="200px">
+                    <div class="desc">
+                        <span>Outdoor Bonsai</span>
+                        <h5>Japanese Maple</h5>
+                        <p>These trees are very popular as ornamental shrubs. </p>
+                    </div>
+                    <h3>Rs. 7000</h3>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="../products/Hackberry.html"><img src="../images/outdoor/hackberry.jpg" alt="Juniper">
+                    <div class="desc">
+                        <span>Outdoor Bonsai</span>
+                        <h5>Hackberry
+                        </h5>
+                        <p>These trees are deciduous and have a grayish-colored bark. It can be kept indoors</p>
+                    </div>
+                    <h3>Rs. 5999</h3>
+                </a>
+            </div>
+        </div>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="../products/FukienTea.html"><img src="../images/indoor/Fukien.jpg" alt="Juniper" width="30px"
+                        height="200px">
+                    <div class="desc">
+                        <span>Indoor Bonsai</span>
+                        <h5>Fukien Tea</h5>
+                        <p>The Fukien tea grows up to 3 m tall in the wild and has a fissured, beige-grey bark. </p>
+                    </div>
+                    <h3>Rs. 2500</h3>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="../products/Moneytree.html"><img src="../images/indoor/money.jpg" alt="Satsuki" width="30px"
+                        height="200px">
+                    <br>
+                    <div class="desc">
+                        <span>Indoor Bonsai</span>
+                        <h5>Money Tree</h5>
+                        <p> Money trees are evergreen broadleaf trees with hand-shaped compound leaves.</p>
+                    </div>
+                    <h4 style="text-decoration: line-through; color: red;">Rs.4600</h4>
+                    <h3>Rs. 4500</h3>
+                </a>
+            </div>
+            <div class="pro">
+                <a href="../products/Sweetplum.html"><img src="../images/indoor/sweet.jpg" alt="Satsuki" width="30px"
+                        height="200px">
+                    <br>
+                    <div class="desc">
+                        <span>Indoor Bonsai</span>
+                        <h5>Sweet Plum</h5>
+                        <p>It is great for classical landscapes or pen-jing.</p>
+                    </div>
+                    <h4 style="text-decoration: line-through; color: red;">Rs.8999</h4>
+                    <h3>Rs. 6999</h3>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <section id="pagination" class="section-p1">
+        <a href="./shop.html">1</a>
+        <a href="./shop2.html">2</a>
+    </section>
+    <!-- ---------------with types of bonsai------------ -->
+
+
+    <!-- --------------------footer-------------------- -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="../images/Logo.png" alt="logo" width="180px" style="margin-top: -30px;">
+            <br>
+            <h3>Contact</h3>
+            <br>
+            <p><strong>Address: </strong> Kamalpokhari road-12, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>+977 9876567654, 9878987656</p>
+            <p><strong>Hours: </strong>10:00 am - 08:00 Pm, Sun-Sat</p>
+        </div>
+        </div>
+        <div class="col">
+            <h3>About</h3>
+            <br>
+            <a href="./faq.html">FAQS</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./research.html">Research</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contactus.html">Contact Us!</a>
+        </div>
+        <div class="col">
+            <h3>Account</h3>
+            <a href="./login.html">Sign in</a>
+            <a href="./signup.html">Sign Up</a>
+        </div>
+        <div class="col install">
+            <h3>Services</h3>
+            <p>All over Nepal Service</p>
+            <img src="../images/nepal.png" alt="nepal map" width="180px">
+        </div>
+    </footer>
+    <div class="copyright" style="text-align: center;">
+        <p>Copyright © 2023 | Bonsaia | Team 3 | All rights reserved </p>
+        <p> Terms and Condititons | Privacy Policy </p>
+    </div>
+    <!-- --------------end of the all footers----------------------------- -->
+
+</body>
+
+</html>
